@@ -2565,32 +2565,6 @@ public OnPlayerConnect(playerid)
 	    Kick(playerid);
 	    return 1;
 	}
-	new namestring = strfind(PlayerName, "_", true);
-	if(namestring == -1)
-	{
-		SendClientMessage(playerid, TEAM_AZTECAS_COLOR, "Server: ชื่อของคุณไม่ถูกต้อง !");
-		SendClientMessage(playerid, TEAM_AZTECAS_COLOR, "Server: โปรดตั้งชื่อแบบ Firstname_Lastname คือชื่อที่มีนามสกุล ! ");
-		Kick(playerid);
-		return 1;
-	}
-	namestring = strfind(PlayerName, "Sony", true);
-	if(namestring == 1)
-	{
-		Ban(playerid);
-		return 1;
-	}
-	namestring = strfind(PlayerName, "[ViP]Labrik", true);
-	if(namestring == 1)
-	{
-		Ban(playerid);
-		return 1;
-	}
-	namestring = strfind(PlayerName, "[MT]Lavis", true);
-	if(namestring == 1)
-	{
-		Ban(playerid);
-		return 1;
-	}
 	gActivePlayers[playerid]++;
 	numplayers++;
 	new plname[MAX_PLAYER_NAME];
