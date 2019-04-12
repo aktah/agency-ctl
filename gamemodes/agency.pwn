@@ -2,11 +2,17 @@
 	Edited by Aktah (SAMPCTL)
 		forum.script-wise.in.th
 */
+
 #include <a_samp>
+
+// Include แยกที่ไม่มีอยู่ใน Github (เก็บไฟล์ไว้ในโฟลเดอร์ includeEx) 
 #include <utils>
 #include <morphinc>
 #include <BadWords>
+
+// Include ที่มีอยู่ใน Github
 #include <streamer>
+#include <easyDialog>
 
 #pragma dynamic 10000
 #pragma tabsize 0
@@ -2550,7 +2556,7 @@ public OnPlayerConnect(playerid)
 	new joiner[256];
 	GetPlayerName(playerid, PlayerName, sizeof(PlayerName));
 	GetPlayerName(playerid, joiner, sizeof(joiner));
-	format(joiner,sizeof(joiner),"*** %s ได้เชื่อมต่อกับเซิฟเวอร์[Joiner]",joiner);
+	format(joiner,sizeof(joiner),"*** %s ได้เชื่อมต่อกับเซิฟเวอร์ [Joiner]",joiner);
 	RentCarKey[playerid] = 999;
     SendClientMessageToAll(COLOR_GRAD4,joiner);
 	if(Security != 0)
