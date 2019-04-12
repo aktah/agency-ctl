@@ -3,6 +3,7 @@
 		forum.script-wise.in.th
 */
 
+// Include พื้นฐาน
 #include <a_samp>
 
 // Include แยกที่ไม่มีอยู่ใน Github (เก็บไฟล์ไว้ในโฟลเดอร์ includeEx) 
