@@ -1,0 +1,32 @@
+{
+	"user": "aktah",
+	"repo": "agency-ctl",
+	"entry": "gamemodes\\agency.pwn",
+	"output": "gamemodes\\agency.amx",
+	"dependencies": [
+		"sampctl/samp-stdlib",
+		"samp-incognito/samp-streamer-plugin"
+	],
+	"local": true,
+	"builds": [
+		{
+			"name": "build",
+			"includes": [
+				"includeEx"
+			]
+		}
+	],
+	"runtime": {
+		"version": "0.3.DL-R1",
+		"mode": "server",
+		"filterscripts": [
+
+		],
+		"plugins": [
+
+		],
+		"echo": "-",
+		"rcon_password": "password",
+		"port": 7777
+	}
+}
