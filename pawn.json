@@ -7,7 +7,7 @@
 	"dependencies": [
 		"sampctl/samp-stdlib",
 		"samp-incognito/samp-streamer-plugin",
-		"Awsomedude/easyDialog"
+		"aktah/easyDialog"
 	],
 	"local": true,
 	"builds": [
